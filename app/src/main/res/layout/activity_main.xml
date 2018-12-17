@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#defccf"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:id="@+id/TitleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Add New Note"
+        android:textSize="40dp"
+        android:textColor="#35b20a"
+        android:layout_marginLeft="70dp"
+        android:layout_marginBottom="15dp"
+
+        />
+    <Button
+        android:id="@+id/button_viewdate"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Pick a date"
+        android:textColor="#266607"
+        android:background="#c0fca4"
+        android:textSize="30dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        />
+    <EditText
+        android:id="@+id/txt_imagelink"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:ems="15"
+        android:hint="Link hinh anh"
+        android:inputType="text"
+        android:background="#beedaa"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        />
+    <RadioGroup
+        android:id="@+id/rdg_thuchi"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/radiobtn_chi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:text="Chi"/>
+            <RadioButton
+                android:id="@+id/radiobtn_thu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:text="Thu"/>
+        </LinearLayout>
+
+    </RadioGroup>
+    <EditText
+        android:id="@+id/txt_money"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="15"
+        android:hint="So Tien"
+        android:inputType="numberDecimal"
+        android:background="#f9eda7"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        />
+    <EditText
+        android:id="@+id/txt_ghichu"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:ems="15"
+        android:hint="Noi Dung"
+        android:inputType="text"
+        android:background="#f9eda7"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/button_add"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="20dp"
+            android:background="#a3f986"
+            android:text="Add"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"/>
+        <Button
+            android:id="@+id/button_viewlist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="20dp"
+            android:background="#a3f986"
+            android:text="View List Note"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"/>
+    </LinearLayout>
+
+</LinearLayout>
